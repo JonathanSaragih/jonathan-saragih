@@ -1,0 +1,167 @@
+.contact {
+    height: 100vh;
+    padding-top: 150px;
+    display: flex;
+}
+
+.contact-section {
+    width: 100%;
+}
+
+.contact-section ul {
+    flex-direction: column;
+
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.contact-info ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+
+.contact-info ul li i {
+    margin-right: 20px;
+    color: #FFC107;
+    /* Yellow icon color */
+}
+
+.contact-info ul li a {
+    color: #ffff;
+
+    transition: .4s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #FFC107;
+}
+
+
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+
+    background-color: #4B0082;
+    /* Dark indigo background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 73vh;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #2E0057;
+    /* Darker purple */
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #B0A9B9;
+    /* Light purple placeholder */
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #FFC107;
+    /* Yellow button */
+    color: #1A0033;
+    /* Dark purple text */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 73vh;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #EE82EE;
+    /* Hover effect: lavender color */
+}
+
+@media screen and (max-width: 9px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 952px) {
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form {
+        width: auto;
+    }
+
+    .contact-form form {
+        width: auto;
+    }
+
+    #inputname, #inputemail, #textarea {
+        width:fit-content
+    }
+
+    #tombolsubmit {
+        width: fit-content;
+    }
+    
+}

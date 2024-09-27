@@ -2,9 +2,14 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -12,13 +17,26 @@
     <main class="main">
         <header class="navbar">
             <img src="pic/logobener.png" class="logo" alt="Logo">
+            <label for="menu-toggle" class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </label>
             <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#aboutme">ABOUT</a></li>
-                    <li><a href="#skill">SKILLS</a></li>
-                    <li><a href="#work">myWORKS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                <ul class="nav-links">
+                    <li >
+                        <a class="nav-item" href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#aboutme">ABOUT</a></li>
+                    <li>
+                        <a href="#skill">SKILLS</a></li>
+                    <li>
+                        <a href="#work">MY WORKS</a></li>
+                    <li>
+                        <a href="#">PROJECTS</a></li>
+                    <li>
+                        <a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
@@ -64,8 +82,8 @@
                 <figure>
                     <img src="pic/orangngoding1.jpg" alt="App Design">
                     <figcaption>
-                        <h3>App design</h3>
-                        <p>Figma, Adobe XD, Adobe Photoshop & Adobe Illustrator</p>
+                        <h3>Programming</h3>
+                        <p>Nest-JS, Python, C, Java, CSS, HTML</p>
                     </figcaption>
                 </figure>
             </article>
@@ -82,8 +100,8 @@
                 <figure>
                     <img src="pic/ROBOT.jpg" alt="UX Design">
                     <figcaption>
-                        <h3>UX design</h3>
-                        <p>User interviews, surveys, competitive audit, personas & usability testing</p>
+                        <h3>Business Development</h3>
+                        <p>Business case, Analysis FrameWork, Financial Projection</p>
                     </figcaption>
                 </figure>
             </article>
@@ -130,6 +148,27 @@
         </section>
     </section>
 
+
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <div class="projects-description">
+                <h1>My Projects</h1>
+                <p>Here are some of the projects I have worked on. Each project showcases my skills and expertise in various areas of software development.</p>
+            </div>
+            <div class="projects-images">
+                <div class="project-image active">
+                    <img src="pic/itb.jpg" alt="Project 1">
+                </div>
+                <div class="project-image">
+                    <img src="pic/orangngoding1.jpg" alt="Project 2">
+                </div>
+                <div class="project-image">
+                    <img src="pic/ROBOT.jpg" alt="Project 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact-section">
         <div class="contact-container">
             <!-- Contact Info -->
@@ -149,8 +188,8 @@
                 <form action="#" method="post">
                     <input id="inputname" type="text" name="name" placeholder="Your name" required>
                     <input id="inputemail" type="email" name="email" placeholder="Your email" required>
-                    <textarea name="message" rows="5" placeholder="Typing your message here..." required></textarea>
-                    <button type="submit">Send message</button>
+                    <textarea id=" textareaa" name="message" rows="5" placeholder="Typing your message here..." required></textarea>
+                    <button id="tombolsubmit" type="submit">Send message</button>
                 </form>
             </div>
         </div>

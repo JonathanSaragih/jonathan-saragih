@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-    width: 100%;
+    width:100%;
     background-color: #1A0033;
     background-position: center;
     background-size: cover;
@@ -20,8 +20,6 @@ body {
 }
 
 .navbar {
-    position: fixed;
-    top: 0%;
     width: 100%;
     height: auto;
     display: flex;
@@ -30,6 +28,9 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #FFC107;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    z-index: 1;
 }
 
 .navbar .logo {
@@ -38,6 +39,44 @@ body {
     cursor: pointer;
     margin-top: 0%;
     margin-left: 5%;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(230, 104, 59);
+}
+
+/* Burger Bar */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: darkslategray;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none;
 }
 
 ul {
@@ -91,7 +130,7 @@ ul li a:hover {
 }
 
 .image-container {
-    width: 50%;
+    width: 100%;
     /* Adjust width as needed */
 }
 
@@ -137,11 +176,11 @@ ul li a:hover {
     display: block;
     align-self: flex-start;
     /* Align to the left */
-    width: 70%;
+    width: 100%;
 }
 
 .jojo {
-    margin-top: 10%;
+    margin-top: 15%;
     margin-right: 10%;
     width: 30%;
 }
@@ -153,447 +192,53 @@ ul li a:hover {
     object-fit: cover;
 }
 
-/* General Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1A0033;
-    /* Dark purple background */
-    color: white;
-}
-
-section.aboutme {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #FFC107;
-    /* Warna judul kuning */
-    margin-bottom: 30px;
-}
-
-section.aboutme-content {
-    display: flex;
-    align-items: center;
-    background-color: rgba(48, 16, 78, 0.7);
-    /* Dark translucent background */
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 800px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-section.aboutme-pic img {
-    width: 200px;
-    height: auto;
-    margin-right: 40px;
-    border-radius: 10%;
-    /* Membuat gambar menjadi bulat */
-    object-fit: cover;
-}
-
-section.aboutme-desc {
-    max-width: 500px;
-}
-
-section.aboutme-desc p {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin: 0;
-}
-
-
-/* General Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1A0033;
-    /* Dark purple background */
-    color: white;
-}
-
-section.aboutme-desc p {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin: 0;
-}
-
-.skills-section {
-    text-align: center;
-    padding: 50px 0;
-    height: 100vh;
-}
-
-.skills-section h2 {
-    margin-top: 10%;
-    font-size: 2.5rem;
-    color: #FFC107;
-    /* Purple */
-    margin-bottom: 40px;
-}
-
-.skills-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.skill {
-    background-color: rgba(48, 16, 78, 0.7);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    max-width: 250px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.skill img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-    border-radius: 20%;
-}
-
-.skill h3 {
-    font-size: 1.5rem;
-    color: #FFC107;
-    /* Purple */
-    margin-bottom: 15px;
-}
-
-.skill p {
-    font-size: 1rem;
-    color: #FFFFFF;
-    line-height: 1.5;
-}
-
-.works {
-    text-align: center;
-    padding: 40px 0;
-    height: 100vh;
-}
-
-.works h2 {
-    margin-top: 10%;
-    font-size: 2.5rem;
-    color: #FFC107;
-    /* Purple */
-    margin-bottom: 40px;
-}
-
-.experiences-section,
-.contributions-section {
-    text-align: center;
-    padding: 140px 0;
-    background-color: #1A0033;
-}
-
-h2 {
-    font-size: 2.2rem;
-    color: #FFC107;
-    /* Bright Orange */
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.experience-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-
-}
-
-.experience-container article {
-    margin-left: 6%;
-    /* Memberi jarak horizontal antara elemen section */
-    margin-right: 6%;
-    height: 10%;
-}
-
-.contribution-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-
-
-.experience,
-.contribution {
-    background-color: rgba(48, 16, 78, 0.7);
-    border-radius: 15px;
-    padding: 20px;
-    width: 300px;
-    margin: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    text-align: left;
-}
-
-
-.experience h3,
-.contribution h3 {
-    font-size: 1.2rem;
-    color: rgb(144, 147, 212);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.experience p,
-.contribution p {
-    font-size: 0.9rem;
-    color: #FFFFFF;
-    line-height: 1.4;
-}
-
-#panel1 {
-    content: url(../pic/instagram-vector-logo-icon-social-media-logotype_901408-390.avif);
-    float: left;
-    width: 250px;
-    height: 150px;
-    vertical-align: middle;
-
-}
-
-.contact {
-    height: 100vh;
-    padding-top: 150px;
-    display: flex;
-}
-
-.contact-section {
-    width: 100%;
-}
-
-.contact-section ul {
-    flex-direction: column;
-
-}
-
-.contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 1200px;
-    text-align: left;
-}
-
-.contact-info {
-    flex: 1;
-    padding: 20px;
-}
-
-.contact-info h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.contact-info ul {
-    list-style-type: none;
-    text-align: left;
-}
-
-.contact-info ul li {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    text-align: left;
-
-}
-
-.contact-info ul li i {
-    margin-right: 20px;
-    color: #FFC107;
-    /* Yellow icon color */
-}
-
-.contact-info ul li a {
-    color: #ffff;
-
-    transition: .4s ease;
-}
-
-.contact-info ul li a:hover {
-    color: #FFC107;
-}
-
-
-
-.contact-form {
-    flex: 1;
-    padding: 20px;
-
-    background-color: #4B0082;
-    /* Dark indigo background */
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    width: 73vh;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #2E0057;
-    /* Darker purple */
-    border: none;
-    color: white;
-    border-radius: 5px;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #B0A9B9;
-    /* Light purple placeholder */
-}
-
-.contact-form button {
-    padding: 15px;
-    background-color: #FFC107;
-    /* Yellow button */
-    color: #1A0033;
-    /* Dark purple text */
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 73vh;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #EE82EE;
-    /* Hover effect: lavender color */
-}
-
-/* Media Query for iPhone SE (2020) and iPhone 8 (375px width) */
-@media only screen and (max-width: 375px) {
-    .description h1 {
-        font-size: 35px;
+/* Media Queries */
+@media (max-width: 952px) {
+    .info {
+        display:grid;
+        
+    }
+    .description{
+        text-align: center;
+        margin-top: 40%;
+    }
+    .jojo{
+        margin: auto;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #FFC107;
     }
 
-    .info h1 {
-        font-size: 40px;
-    }
-
-    .jojo {
-        width: 80%;
-    }
-
-    .aboutme-pic img {
-        width: 100px;
-    }
-
-    .skill {
+    .nav-links li {
+        text-align: center;
+        padding: 15px 0;
         width: 100%;
     }
 
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
+    .burger {
+        display: block;
     }
 
-    .contact-form {
-        width: 100%;
+    /* Show the menu when the checkbox is checked */
+    .menu-toggle:checked ~ nav .nav-links {
+        display: flex;
     }
 
-    .experience-container, .contribution-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Media Query for iPhone 12/12 Pro (390px width) */
-@media only screen and (max-width: 390px) {
-    .description h1 {
-        font-size: 38px;
+    .menu-toggle:checked + .burger .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
     }
 
-    .info h1 {
-        font-size: 45px;
+    .menu-toggle:checked + .burger .line2 {
+        opacity: 0;
     }
 
-    .jojo {
-        width: 75%;
-    }
-
-    .aboutme-pic img {
-        width: 120px;
-    }
-
-    .skill {
-        width: 95%;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    .experience-container, .contribution-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Media Query for iPhone 13 Pro Max (430px width) */
-@media only screen and (max-width: 430px) {
-    .description h1 {
-        font-size: 42px;
-    }
-
-    .info h1 {
-        font-size: 48px;
-    }
-
-    .jojo {
-        width: 70%;
-    }
-
-    .aboutme-pic img {
-        width: 140px;
-    }
-
-    .skill {
-        width: 90%;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    .experience-container, .contribution-container {
-        flex-direction: column;
-        align-items: center;
+    .menu-toggle:checked + .burger .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 }

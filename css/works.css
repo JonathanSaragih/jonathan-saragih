@@ -1,0 +1,112 @@
+.works {
+    text-align: center;
+    padding: 40px 0;
+    height: 100vh;
+}
+
+.works h2 {
+    margin-top: 10%;
+    font-size: 2.5rem;
+    color: #FFC107;
+    /* Purple */
+    margin-bottom: 40px;
+}
+
+.experiences-section,
+.contributions-section {
+    text-align: center;
+    padding: 140px 0;
+    background-color: #1A0033;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #FFC107;
+    /* Bright Orange */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+}
+
+.experience-container article {
+    margin-left: 6%;
+    /* Memberi jarak horizontal antara elemen section */
+    margin-right: 6%;
+    height: 10%;
+}
+
+.contribution-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+
+.experience,
+.contribution {
+    background-color: rgba(48, 16, 78, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+
+.experience h3,
+.contribution h3 {
+    font-size: 1.2rem;
+    color: rgb(144, 147, 212);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience p,
+.contribution p {
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 952px){
+    .works {
+        text-align: center;
+        padding: 40px 0;
+        height: 100vh;
+        
+    }
+
+    .experiences-section,
+    .contributions-section {
+        text-align: center;
+        padding: 140px 0;
+        background-color: #1A0033;
+        margin-top: 20%;
+        margin-left: 13%;
+    }
+
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-container article {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contribution-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,81 @@
+section.aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #FFC107;
+    /* Warna judul kuning */
+    margin-bottom: 30px;
+}
+
+section.aboutme-content {
+    display: flex;
+    align-items: center;
+    background-color: rgba(48, 16, 78, 0.7);
+    /* Dark translucent background */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+section.aboutme-pic img {
+    width: 200px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 10%;
+    /* Membuat gambar menjadi bulat */
+    object-fit: cover;
+}
+
+section.aboutme-desc {
+    max-width: 500px;
+}
+
+section.aboutme-desc p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A0033;
+    /* Dark purple background */
+    color: white;
+}
+
+section.aboutme-desc p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media screen and (max-width: 952px) {
+
+    .aboutme {
+        margin-top: 30%;
+    }
+    section.aboutme-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 13%;
+        text-align: center;
+        
+    }
+
+    section.aboutme-pic img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+}
