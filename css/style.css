@@ -1,21 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html, body{
+html,
+body {
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
-.main{
+
+.main {
     width: 100%;
-    background-color: #1A0033 ;
+    background-color: #1A0033;
     background-position: center;
     background-size: cover;
     height: 100%;
     position: relative;
     font-family: 'Poppins';
 }
-.navbar{
+
+.navbar {
     position: fixed;
     top: 0%;
     width: 100%;
@@ -25,70 +29,93 @@ html, body{
     padding: 15px 0;
     align-items: center;
     justify-content: space-between;
-    background-color:  #FFC107;
+    background-color: #FFC107;
 }
-.navbar .logo{
+
+.navbar .logo {
     width: 80px;
     height: auto;
     cursor: pointer;
     margin-top: 0%;
     margin-left: 5%;
 }
-ul{
-    display: flex; /* Add this line */
-    align-items: center; /* Add this line */
-    margin-top: 0; /* Adjust margin if necessary */
+
+ul {
+    display: flex;
+    /* Add this line */
+    align-items: left;
+    /* Add this line */
+    margin-top: 0;
+    /* Adjust margin if necessary */
     margin-right: 7%;
+
 }
-ul li{
+
+ul li {
     list-style: none;
     display: flex;
-    align-items: center;
     padding: 10px 16px;
 }
-ul li a{
-   font-size: 16px;
-   font-weight: bold;
-   text-decoration: none;
-   color: darkslategray;
-   margin-top: -3%;
-   transition: .4s ease;
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 5, 5);
+    margin-top: -3%;
+    transition: .4s ease;
 }
-ul li a:hover{
-    color: rgb(230, 104, 59);
+
+ul li a:hover {
+    color: #EE82EE;
 }
-.container{
+
+.container {
     display: flex;
-    flex-direction: row; /* Ensure items are in a row */
-    justify-content: space-between; /* Space out items evenly */
-    align-items: center; /* Align items vertically in the center */
+    flex-direction: row;
+    /* Ensure items are in a row */
+    justify-content: space-between;
+    /* Space out items evenly */
+    align-items: center;
+    /* Align items vertically in the center */
 }
+
 .info-container {
-    width: 50%; /* Adjust width as needed */
+    width: 50%;
+    /* Adjust width as needed */
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: flex-start;
+    /* Align items to the left */
 }
+
 .image-container {
-    width: 50%; /* Adjust width as needed */
+    width: 50%;
+    /* Adjust width as needed */
 }
-.info{
+
+.info {
     margin-left: 7%;
     display: flex;
 }
-.info h1{
+
+.info h1 {
     font-size: 65px;
     color: white;
 }
-.info h3{
+
+.info h3 {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 24px;
 }
-.info span{
+
+.info span {
     color: #FFC107;
 }
-.info a{
+
+.info a {
     text-decoration: none;
     color: #fff;
     background: rgb(36, 32, 30);
@@ -98,25 +125,28 @@ ul li a:hover{
     display: inline-block;
     transition: .4s ease;
 }
-.info a:hover{
+
+.info a:hover {
     background: rgb(230, 104, 59);
 }
-.description{
+
+.description {
     color: #fff;
     margin-top: 20%;
 
     display: block;
-    align-self: flex-start; /* Align to the left */
+    align-self: flex-start;
+    /* Align to the left */
     width: 70%;
 }
 
-.jojo{
+.jojo {
     margin-top: 10%;
     margin-right: 10%;
     width: 30%;
 }
 
-.jojo img{
+.jojo img {
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -128,7 +158,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1A0033; /* Dark purple background */
+    background-color: #1A0033;
+    /* Dark purple background */
     color: white;
 }
 
@@ -142,14 +173,16 @@ section.aboutme {
 
 h1 {
     font-size: 2.5rem;
-    color: #FFC107; /* Warna judul kuning */
+    color: #FFC107;
+    /* Warna judul kuning */
     margin-bottom: 30px;
 }
 
 section.aboutme-content {
     display: flex;
     align-items: center;
-    background-color: rgba(48, 16, 78, 0.7); /* Dark translucent background */
+    background-color: rgba(48, 16, 78, 0.7);
+    /* Dark translucent background */
     border-radius: 20px;
     padding: 40px;
     max-width: 800px;
@@ -160,7 +193,8 @@ section.aboutme-pic img {
     width: 200px;
     height: auto;
     margin-right: 40px;
-    border-radius: 10%; /* Membuat gambar menjadi bulat */
+    border-radius: 10%;
+    /* Membuat gambar menjadi bulat */
     object-fit: cover;
 }
 
@@ -180,7 +214,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1A0033; /* Dark purple background */
+    background-color: #1A0033;
+    /* Dark purple background */
     color: white;
 }
 
@@ -193,13 +228,14 @@ section.aboutme-desc p {
 .skills-section {
     text-align: center;
     padding: 50px 0;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .skills-section h2 {
     margin-top: 10%;
     font-size: 2.5rem;
-    color: #FFC107; /* Purple */
+    color: #FFC107;
+    /* Purple */
     margin-bottom: 40px;
 }
 
@@ -227,7 +263,8 @@ section.aboutme-desc p {
 
 .skill h3 {
     font-size: 1.5rem;
-    color: #FFC107; /* Purple */
+    color: #FFC107;
+    /* Purple */
     margin-bottom: 15px;
 }
 
@@ -239,25 +276,29 @@ section.aboutme-desc p {
 
 .works {
     text-align: center;
-    padding: 50px 0;
-    height: 100vh; 
+    padding: 40px 0;
+    height: 100vh;
 }
+
 .works h2 {
     margin-top: 10%;
     font-size: 2.5rem;
-    color: #FFC107; /* Purple */
+    color: #FFC107;
+    /* Purple */
     margin-bottom: 40px;
 }
 
-.experiences-section, .contributions-section {
+.experiences-section,
+.contributions-section {
     text-align: center;
-    padding: 40px 0;
+    padding: 140px 0;
     background-color: #1A0033;
 }
 
 h2 {
     font-size: 2.2rem;
-    color: #FFC107; /* Bright Orange */
+    color: #FFC107;
+    /* Bright Orange */
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
@@ -271,7 +312,8 @@ h2 {
 }
 
 .experience-container article {
-    margin-left:  6%; /* Memberi jarak horizontal antara elemen section */
+    margin-left: 6%;
+    /* Memberi jarak horizontal antara elemen section */
     margin-right: 6%;
     height: 10%;
 }
@@ -284,7 +326,8 @@ h2 {
 }
 
 
-.experience, .contribution {
+.experience,
+.contribution {
     background-color: rgba(48, 16, 78, 0.7);
     border-radius: 15px;
     padding: 20px;
@@ -295,19 +338,262 @@ h2 {
 }
 
 
-.experience h3, .contribution h3 {
+.experience h3,
+.contribution h3 {
     font-size: 1.2rem;
     color: rgb(144, 147, 212);
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.experience p, .contribution p {
+.experience p,
+.contribution p {
     font-size: 0.9rem;
     color: #FFFFFF;
     line-height: 1.4;
 }
 
+#panel1 {
+    content: url(../pic/instagram-vector-logo-icon-social-media-logotype_901408-390.avif);
+    float: left;
+    width: 250px;
+    height: 150px;
+    vertical-align: middle;
+
+}
+
+.contact {
+    height: 100vh;
+    padding-top: 150px;
+    display: flex;
+}
+
+.contact-section {
+    width: 100%;
+}
+
+.contact-section ul {
+    flex-direction: column;
+
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.contact-info ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+
+.contact-info ul li i {
+    margin-right: 20px;
+    color: #FFC107;
+    /* Yellow icon color */
+}
+
+.contact-info ul li a {
+    color: #ffff;
+
+    transition: .4s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #FFC107;
+}
 
 
 
+.contact-form {
+    flex: 1;
+    padding: 20px;
+
+    background-color: #4B0082;
+    /* Dark indigo background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 73vh;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #2E0057;
+    /* Darker purple */
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #B0A9B9;
+    /* Light purple placeholder */
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #FFC107;
+    /* Yellow button */
+    color: #1A0033;
+    /* Dark purple text */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 73vh;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #EE82EE;
+    /* Hover effect: lavender color */
+}
+
+/* Media Query for iPhone SE (2020) and iPhone 8 (375px width) */
+@media only screen and (max-width: 375px) {
+    .description h1 {
+        font-size: 35px;
+    }
+
+    .info h1 {
+        font-size: 40px;
+    }
+
+    .jojo {
+        width: 80%;
+    }
+
+    .aboutme-pic img {
+        width: 100px;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .experience-container, .contribution-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Query for iPhone 12/12 Pro (390px width) */
+@media only screen and (max-width: 390px) {
+    .description h1 {
+        font-size: 38px;
+    }
+
+    .info h1 {
+        font-size: 45px;
+    }
+
+    .jojo {
+        width: 75%;
+    }
+
+    .aboutme-pic img {
+        width: 120px;
+    }
+
+    .skill {
+        width: 95%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .experience-container, .contribution-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Query for iPhone 13 Pro Max (430px width) */
+@media only screen and (max-width: 430px) {
+    .description h1 {
+        font-size: 42px;
+    }
+
+    .info h1 {
+        font-size: 48px;
+    }
+
+    .jojo {
+        width: 70%;
+    }
+
+    .aboutme-pic img {
+        width: 140px;
+    }
+
+    .skill {
+        width: 90%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .experience-container, .contribution-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
