@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-    width:100%;
+    width: 100%;
     background-color: #1A0033;
     background-position: center;
     background-size: cover;
@@ -40,6 +40,7 @@ body {
     margin-top: 0%;
     margin-left: 5%;
 }
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -195,16 +196,19 @@ ul li a:hover {
 /* Media Queries */
 @media (max-width: 952px) {
     .info {
-        display:grid;
-        
+        display: grid;
+
     }
-    .description{
+
+    .description {
         text-align: center;
         margin-top: 40%;
     }
-    .jojo{
+
+    .jojo {
         margin: auto;
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -221,24 +225,5 @@ ul li a:hover {
         width: 100%;
     }
 
-    .burger {
-        display: block;
-    }
 
-    /* Show the menu when the checkbox is checked */
-    .menu-toggle:checked ~ nav .nav-links {
-        display: flex;
-    }
-
-    .menu-toggle:checked + .burger .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-toggle:checked + .burger .line2 {
-        opacity: 0;
-    }
-
-    .menu-toggle:checked + .burger .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
 }
